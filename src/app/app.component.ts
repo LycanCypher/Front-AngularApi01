@@ -11,7 +11,7 @@ export class AppComponent {
   title = 'Api01';
 
   constructor (private router: Router) {}
-
+  //Se definen los métodos de ruteo
   listar () {
     this.router.navigate(["listar"]);
   }

@@ -29,7 +29,7 @@ export class EditComponent implements OnInit {
     this.service.updateProducto(producto)
     .subscribe(data=>{
       this.producto = data;
-      alert("Actualización exitosa!!!");
+      alert("Actualización exitosa del producto!!!");
       this.router.navigate(["listar"]);
     })
   }

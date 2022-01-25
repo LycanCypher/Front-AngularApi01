@@ -19,12 +19,10 @@ export class AddComponent implements OnInit {
   }
 
   Guardar (modelProducto) {
-    //alert("Se agregó con éxito!!!");
     this.service.createProducto(modelProducto)
     .subscribe(data=>{
-      alert("Se agregó con éxito!!!");
+      alert("El producto se agregó con éxito!!!");
       this.router.navigate(["listar"]);
     })
   }
-
 }

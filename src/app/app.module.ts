@@ -13,16 +13,19 @@ import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
+    //Se agregan
     ListarComponent,
     AddComponent,
     EditComponent
   ],
   imports: [
     BrowserModule,
+    //Se agregan
     AppRoutingModule,
     FormsModule,
     HttpClientModule
   ],
+  //Se agrega el ServiceService
   providers: [ServiceService],
   bootstrap: [AppComponent]
 })

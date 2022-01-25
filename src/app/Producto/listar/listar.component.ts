@@ -35,7 +35,6 @@ export class ListarComponent implements OnInit {
     this.http.deleteProducto(producto)
     .subscribe(data=>{
       this.productos = this.productos!.filter(p => p! == producto);
-      //alert("Producto eliminado");
       this.Listar();
     })
   }
